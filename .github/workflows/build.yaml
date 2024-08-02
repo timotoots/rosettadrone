@@ -36,7 +36,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Get mock keys
-      run: wget -O ./app/src/main/res/values/keys.xml https://devel.maajaam.ee/droon/rosettadrone/index.php?c=k
+      run: wget -O ./app/src/main/res/values/keys.xml http://devel.maajaam.ee/droon/rosettadrone/?github=1
     - run: cat ./app/src/main/res/values/keys.xml
     - name: Build with Gradle
       run: ./gradlew build
